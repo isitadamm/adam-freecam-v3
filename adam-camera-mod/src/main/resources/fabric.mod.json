@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "adamcamera",
+  "version": "${version}",
+  "name": "Adam Camera",
+  "description": "A simple client-side freecam. Press F4 to detach your camera and fly around; hold Shift to move faster.",
+  "authors": ["Adam"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["dev.adam.adamcamera.AdamCameraClient"]
+  },
+  "mixins": [
+    {
+      "config": "adamcamera.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "~${minecraft_version}",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
